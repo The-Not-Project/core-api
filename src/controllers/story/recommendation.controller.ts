@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { fetchStories } from "./helpers/story.helpers.js";
+import { fetchStories } from "../.helpers/story.helpers.js";
 import { prisma } from "@/prisma/index.js";
 
 export async function getRecommendations(req: Request, res: Response) {

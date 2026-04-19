@@ -5,9 +5,9 @@ import {
   flattenCategories,
   processCategories,
   STORY_RELATIONS,
-} from "./helpers/story.helpers.js";
+} from "../.helpers/story.helpers.js";
 import { prisma } from "@/prisma/index.js";
-import { processStoryAssets } from "./helpers/file.helpers.js";
+import { processStoryAssets } from "../.helpers/file.helpers.js";
 
 export async function getStories(req: Request, res: Response) {
   try {
